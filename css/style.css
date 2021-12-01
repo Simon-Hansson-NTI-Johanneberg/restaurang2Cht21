@@ -1,3 +1,45 @@
-body {
-  background:grey;
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+  'log log log'
+  'men bil sec'
+  'foo foo sec'
+  ;
+  grid-template-columns: 3fr 4fr 3fr;
+  grid-template-rows: 2fr 8fr 120px;
+
+}
+section {
+  grid-area: sec;
+  grid-template-areas: 
+  'pla'
+  'ag'
+;
+grid-template-rows: 5fr 3fr;
+}
+
+header {
+  grid-area: log;
+  background-color: rgb(59, 53, 46);
+}
+aside {
+  grid-area: men;
+  background-color: rgb(172, 145, 112);
+}
+.bild {
+  grid-area: bil;
+  background-color: rgb(139, 99, 50);
+}
+.plats {
+  grid-area: pla;
+  background-color: rgb(247, 208, 160);
+}
+.agare {
+  grid-area: ag;
+  background-color: rgb(94, 55, 8);
+}
+footer {
+  grid-area: foo;
+  background-color: rgb(71, 52, 29);
 }
