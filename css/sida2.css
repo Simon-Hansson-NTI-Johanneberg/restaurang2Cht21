@@ -1,0 +1,50 @@
+#container {
+    display: grid;
+    grid-template-areas: 
+    'he he he'
+    'ett tva tre';
+    width: 100vw;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+#ett {
+    grid-area: ett;
+    background-color: rgb(42, 100, 100);
+    margin: 1rem;
+}
+#tva {
+    grid-area: tva;
+    background-color: rgb(91, 99, 99);
+    margin: 1rem;
+}
+#tre {
+    grid-area: tre;
+    background-color: rgb(66, 136, 136);
+    margin: 1rem;
+}
+header {
+    background-color: rgb(6, 77, 77);
+    grid-area: he;
+    margin: 1rem;
+}
+header {
+    padding: 0;
+    margin: 1rem;
+}
+#ett:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+#tva:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+#tre:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+img {
+    width: 100%;
+    height: 100%;
+}

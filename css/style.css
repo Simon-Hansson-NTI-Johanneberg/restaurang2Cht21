@@ -1,5 +1,6 @@
-.container {
+#container {
   width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-areas: 
   'log log log'
@@ -10,8 +11,13 @@
   grid-template-rows: 2fr 8fr 120px;
 
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 section {
   grid-area: sec;
+  display: grid;
   grid-template-areas: 
   'pla'
   'ag'
@@ -27,15 +33,16 @@ aside {
   grid-area: men;
   background-color: rgb(172, 145, 112);
 }
-.bild {
+#bild {
   grid-area: bil;
   background-color: rgb(139, 99, 50);
 }
-.plats {
+#plats {
   grid-area: pla;
   background-color: rgb(247, 208, 160);
+  padding: 1rem;
 }
-.agare {
+#agare {
   grid-area: ag;
   background-color: rgb(94, 55, 8);
 }
