@@ -1,50 +1,182 @@
-#container {
+#container2 {
+    display: grid;
+    grid-template-areas: 
+    'he'
+    'na';
+    width: 100vw;
+    height: 95vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 5fr;
+    margin: 0;
+}
+nav {
+    display: grid;
+    grid-template-areas: 
+    'ett tva tre';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: na;
+}
+#ettf {
+    grid-area: ett;
+    margin: 1rem;
+}
+#tvaf {
+    grid-area: tva;
+    margin: 1rem;
+}
+#tref {
+    grid-area: tre;
+    margin: 1rem;
+}
+header {
+    background-color: rgb(208, 171, 50);
+    grid-area: he;
+    margin: 1rem;
+    padding: 0;
+}
+#ettf:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+#tvaf:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+#tref:hover {
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+.bild {
+    width: 100%;
+}
+body {
+    background-color: rgb(39, 38, 38);
+    margin: 0;
+}
+#bild {
+    height: 100%;
+}
+#container1 {
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-areas: 
     'he he he'
-    'ett tva tre';
-    width: 100vw;
-    height: 80vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    'men bil sec1'
+    'foo foo sec1'
+    ;
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 120px 8fr 120px;
+  }
+body {
+    margin: 0;
+    padding: 0;
+  }
+#section1 {
+    grid-area: sec1;
+    display: grid;
+    grid-template-areas: 
+    'pla'
+    'ag'
+  ;
+  grid-template-rows: 5fr 3fr;
+  }
+  
+  
+aside {
+    grid-area: men;
+    background-color: rgb(172, 145, 112);
+  }
+#bildf {
+    grid-area: bil;
+    background-color: rgb(139, 99, 50);
+  }
+#plats {
+    grid-area: pla;
+    background-color: rgb(247, 208, 160);
+    padding: 1rem;
+  }
+#agare {
+    grid-area: ag;
+    background-color: rgb(94, 55, 8);
+  }
+footer {
+    grid-area: foo;
+    background-color: rgb(71, 52, 29);
+  }
+  #container3 {
+    display: grid;
+    grid-template-areas: 
+    'he he'
+    'sec2 sec3';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 300%;
+    height: 100vh;
+    margin: 0;
+}
+
+#section2 {
+    grid-area: sec2;
+    display: grid;
+    grid-template-areas: 
+    'ett'
+    'tva'
+    'tre'
+    'fyra'
+    'fem';
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 5rem;
 }
 #ett {
     grid-area: ett;
-    background-color: rgb(42, 100, 100);
-    margin: 1rem;
+    background-color: crimson;
 }
 #tva {
     grid-area: tva;
-    background-color: rgb(91, 99, 99);
-    margin: 1rem;
+    background-color: crimson;
 }
 #tre {
     grid-area: tre;
-    background-color: rgb(66, 136, 136);
-    margin: 1rem;
+    background-color: crimson;
 }
-header {
-    background-color: rgb(6, 77, 77);
-    grid-area: he;
-    margin: 1rem;
+#fyra {
+    grid-area: fyra;
+    background-color: crimson;
 }
-header {
-    padding: 0;
-    margin: 1rem;
+#fem {
+    grid-area: fem;
+    background-color: crimson;
 }
-#ett:hover {
-    opacity: 0.9;
-    margin: 0.2rem;
+#section3 {
+    display: grid;
+    grid-template-areas: 
+    'sex'
+    'sju'
+    'atta'
+    'nio'
+    'tio';
+    grid-area: sec3;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5rem;
 }
-#tva:hover {
-    opacity: 0.9;
-    margin: 0.2rem;
+#sex {
+    grid-area: sex;
+    background-color: darkblue;
 }
-#tre:hover {
-    opacity: 0.9;
-    margin: 0.2rem;
+#sju {
+    grid-area: sju;
+    background-color: darkblue;
 }
-img {
-    width: 100%;
-    height: 100%;
+#atta {
+    grid-area: atta;
+    background-color: darkblue;
+}
+#nio {
+    grid-area: nio;
+    background-color: darkblue;
+}
+#tio {
+    grid-area: tio;
+    background-color: darkblue;
 }

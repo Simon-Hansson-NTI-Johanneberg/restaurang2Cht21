@@ -1,22 +1,21 @@
-#container {
+#container1 {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-areas: 
-  'log log log'
-  'men bil sec'
-  'foo foo sec'
+  'he he he'
+  'men bil sec1'
+  'foo foo sec1'
   ;
   grid-template-columns: 3fr 4fr 3fr;
-  grid-template-rows: 2fr 8fr 120px;
-
+  grid-template-rows: 120px 8fr 120px;
 }
 body {
   margin: 0;
   padding: 0;
 }
-section {
-  grid-area: sec;
+#section1 {
+  grid-area: sec1;
   display: grid;
   grid-template-areas: 
   'pla'
@@ -25,15 +24,12 @@ section {
 grid-template-rows: 5fr 3fr;
 }
 
-header {
-  grid-area: log;
-  background-color: rgb(59, 53, 46);
-}
+
 aside {
   grid-area: men;
   background-color: rgb(172, 145, 112);
 }
-#bild {
+#bildf {
   grid-area: bil;
   background-color: rgb(139, 99, 50);
 }

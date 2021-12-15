@@ -1,0 +1,76 @@
+#container3 {
+    display: grid;
+    grid-template-areas: 
+    'he he'
+    'sec2 sec3';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 300%;
+    height: 100vh;
+    margin: 0;
+}
+
+#section2 {
+    grid-area: sec2;
+    display: grid;
+    grid-template-areas: 
+    'ett'
+    'tva'
+    'tre'
+    'fyra'
+    'fem';
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 5rem;
+}
+#ett {
+    grid-area: ett;
+    background-color: crimson;
+}
+#tva {
+    grid-area: tva;
+    background-color: crimson;
+}
+#tre {
+    grid-area: tre;
+    background-color: crimson;
+}
+#fyra {
+    grid-area: fyra;
+    background-color: crimson;
+}
+#fem {
+    grid-area: fem;
+    background-color: crimson;
+}
+#section3 {
+    display: grid;
+    grid-template-areas: 
+    'sex'
+    'sju'
+    'atta'
+    'nio'
+    'tio';
+    grid-area: sec3;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5rem;
+}
+#sex {
+    grid-area: sex;
+    background-color: darkblue;
+}
+#sju {
+    grid-area: sju;
+    background-color: darkblue;
+}
+#atta {
+    grid-area: atta;
+    background-color: darkblue;
+}
+#nio {
+    grid-area: nio;
+    background-color: darkblue;
+}
+#tio {
+    grid-area: tio;
+    background-color: darkblue;
+}
